@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Project-MLflow/Project-example/mlflow-artifacts/776626920951380850/f109244bf70d4a99a18d0d8a70262ccc/artifacts
+end_time: 1717606950750
+entry_point_name: ''
+experiment_id: '776626920951380850'
+lifecycle_stage: active
+run_id: f109244bf70d4a99a18d0d8a70262ccc
+run_name: run1.1
+run_uuid: f109244bf70d4a99a18d0d8a70262ccc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717606945539
+status: 3
+tags: []
+user_id: Achmad Dino Saputra
