@@ -17,8 +17,12 @@ import mlflow
 import mlflow.sklearn
 from mlflow.models import infer_signature
 
+import dagshub
+
 logging.basicConfig(level=logging.WARN)
 logger = logging.getLogger(__name__)
+
+dagshub.init(repo_owner='dinosptr', repo_name='MLflow-basic', mlflow=True)
 
 
 def eval_metrics(actual, pred):
@@ -86,7 +90,7 @@ if __name__ == "__main__":
             # please refer to the doc for more information:
             # https://mlflow.org/docs/latest/model-registry.html#api-workflow
             mlflow.sklearn.log_model(
-                lr, "model", registered_model_name="ElasticnetWineModel", signature=signature
+                lr, "model", registered_model_name="ElasticnetWineModel"
             )
         else:
-            mlflow.sklearn.log_model(lr, "model", signature=signature)
+            mlflow.sklearn.log_model(lr, "model")
